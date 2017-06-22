@@ -18,3 +18,5 @@ It's possible certain storybook addon requires highlight.js to render document s
     "postcss-simple-vars": "^3.0.0",
 
 https://github.com/DavidWells/PostCSS-tutorial
+
+https://medium.com/@pioul/modular-css-with-react-61638ae9ea3e
