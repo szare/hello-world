@@ -23,3 +23,5 @@ https://medium.com/@pioul/modular-css-with-react-61638ae9ea3e
 
 
 https://frontend.center/
+
+https://github.com/react-bootstrap/react-bootstrap/issues/155
