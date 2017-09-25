@@ -21,6 +21,9 @@ class LastTest extends React.Component {
       y=e.offsetY;
     // }
     console.log('event=', 'X=', x, 'Y=', y)
+    console.log('event=', 'X=', e.pageX, 'Y=', e.pageY)
+    console.log('e.nativeEvent.offsetX=', e.nativeEvent.offsetX)
+    console.log('e.nativeEvent.offsetY=', e.nativeEvent.offsetY)
   }
 
   render() {
