@@ -1,0 +1,19 @@
+{
+  "name": "babel-plugin-qa",
+  "description": "babel quality assurance",
+  "version": "0.0.1",
+  "author": {
+    "name": "Chen Bin"
+  },
+  "files": [
+    "index.js",
+    "package.json"
+  ],
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "assert",
+    "qa"
+  ],
+  "main": "index.js"
+}
