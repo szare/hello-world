@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "./src/babel-plugin-qa",
+    "lodash",
+    "transform-object-rest-spread"
+  ],
+  "presets": [
+    /* airbnb's excludes many plugins (transform-async-to-generator, etc) */
+    "react",
+    ["env", {
+      "targets": {
+        "browsers": ["ie 11"]
+      },
+    }]
+  ]
+}
