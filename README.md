@@ -31,3 +31,6 @@ GrapgQL resources:
 
 Styled-componnets:
 1- https://medium.com/styled-components/how-to-create-responsive-ui-with-styled-components-c6b71a3ce172
+
+CRA:
+1- https://www.npmjs.com/package/source-map-explorer
