@@ -1,0 +1,63 @@
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import {Popover} from 'react-bootstrap';
+import MSGlyphicon from 'MSGlyphicon/MSGlyphicon.js';
+import st from './RHComment.css';
+import {isEmpty} from 'CommonUtil.js';
+
+export default class RHComment extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      absolutePosition: {}
+    };
+  }
+
+  componentDidMount() {
+    const absolutePosition = ReactDOM
+      .findDOMNode(this.refs.statusStreamComment)
+      .getBoundingClientRect();
+    this.setState({
+      absolutePosition: absolutePosition,
+    });
+  }
+
+  render() {
+    const text = this.props.text;
+    let str = '';
+    if (!isEmpty(text)) {
+      str = text.split(/\r\n|\r|\n/g);
+    }
+    let popOverOffset = 20;
+    if (this.state.absolutePosition && this.state.absolutePosition.left > 600) {
+      popOverOffset = 630;
+    }
+    else if (this.state.absolutePosition && this.state.absolutePosition.left > 300 && this.state.absolutePosition.left < 600) {
+      popOverOffset = 325;
+    }
+    const x = this.props.x, y = this.props.y;
+    return (
+      <div className={st.popOverStyle}>
+        <Popover id="popover-trigger-click-root-close" placement="bottom" ref="statusStreamComment"
+                 style={{left: x - popOverOffset, top: y + 5}}
+                 arrowOffsetLeft={popOverOffset}
+        >
+          <MSGlyphicon
+            onClick={ this.props.handleClose }
+            glyph="times"
+            className={st.closeStyle}
+          />
+          <div className={st.outerBorder}>
+            <div className={st.contentText}>
+              <ul className={ st.breakWord }>
+                {str && str.map((s, index) => {
+                  return (<li key={index}>{s}</li>);
+                })}
+              </ul>
+            </div>
+          </div>
+        </Popover>
+      </div>
+    );
+  }
+}
