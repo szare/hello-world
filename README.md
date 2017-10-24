@@ -35,3 +35,6 @@ Styled-componnets:
 CRA:
 1- https://www.npmjs.com/package/source-map-explorer
 2- Code Splitting: https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html
+
+Test:
+1- https://www.browserstack.com/
