@@ -28,6 +28,7 @@ https://github.com/react-bootstrap/react-bootstrap/issues/155
 
 GrapgQL resources:
 1- https://dev-blog.apollodata.com/react-graphql-tutorial-part-2-server-99d0528c7928
+2- https://dev-blog.apollodata.com/reducing-our-redux-code-with-react-apollo-5091b9de9c2a?_ga=2.71483411.1441272226.1509057303-985538511.1509057303
 
 Styled-componnets:
 1- https://medium.com/styled-components/how-to-create-responsive-ui-with-styled-components-c6b71a3ce172
